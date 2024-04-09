@@ -1,0 +1,19 @@
+/* In your CSS file */
+.custom-button {
+    padding: 10px 15px;
+    background: linear-gradient(45deg, #FFA500, #FF4500);
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.5s, background 0.5s, box-shadow 0.5s;
+    box-shadow: 0 6px 8px rgba(255, 255, 255, 0.6); /* White box shadow with border-radius */
+  }
+  
+  .custom-button:hover {
+    transform: scale(0.7) translateX(10%); /* Shrink the button and move it to the right on hover */
+    background: linear-gradient(45deg, #008000, #00FF00) !important; /* Change background color to green gradient on hover */
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.7); /* Adjust white box shadow on hover */
+  }
+  

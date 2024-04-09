@@ -1,0 +1,54 @@
+/* App.css */
+
+/* Reset default body margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set body height to fill viewport */
+    overflow: hidden; /* Prevent body overflow */
+  }
+  
+  /* Ensure the landing page fills the entire viewport */
+  .landing-page {
+    position: absolute; /* Use relative positioning for the landing page */
+    width: 100%; /* Fill entire width of viewport */
+    height: 100%; /* Fill entire height of viewport */
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  /* Responsive adjustments for small screens */
+  @media (max-width: 767px) {
+    /* Adjust styles for small screens (e.g., smartphones) */
+  
+    /* Remove specific positioning for the logo */
+    .logo {
+      position: absolute;
+      top: 10px; /* Adjust the top position as needed */
+      right: 10px; /* Adjust the right position as needed */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      text-align: center;
+      z-index: 1;
+      height: 80px; /* Set a fixed height for the logo container */
+    }
+  
+    /* Ensure main content takes up full width */
+    .main-content {
+      width: 100%; /* Full width */
+      padding-left: 10px; /* Add left padding for better fit */
+      padding-right: 10px; /* Add right padding for better fit */
+    }
+  
+    /* Allow centered content container to adjust height */
+    .centered-content-container {
+      height: auto; /* Allow the content to take up the available height */
+    }
+  
+    /* Add padding to card body for better readability */
+    .card-body {
+      padding: 1rem; /* Add padding to the card body */
+    }
+  }
+  
